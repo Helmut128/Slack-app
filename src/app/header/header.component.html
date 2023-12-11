@@ -1,0 +1,113 @@
+<header>
+  <nav
+    style="display: flex; justify-content: space-between; align-items: center"
+  >
+    <!-- Sección izquierda con el logo y botón Slack -->
+    <div>
+      <ul style="display: flex; align-items: center">
+        <li>
+          <!-- Botón con texto y logo -->
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              font-size: 18px;
+              margin-right: 20px;
+            "
+          >
+            <img
+              src="../../assets/icon/slack.png"
+              alt="Logotipo"
+              style="width: 32px; height: 32px; margin-right: 10px"
+            />
+            <span style="font-weight: bold">Slack</span>
+          </a>
+        </li>
+        <!-- Otros botones del header -->
+        <li *ngFor="let button of buttons">
+          <a href="#">{{ button }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección derecha con los nuevos botones -->
+    <div>
+      <ul style="display: flex; align-items: center">
+        <li>
+          <a routerLink="/login">Iniciar sesión</a>
+        </li>
+        <li>
+          <div
+            style="
+              width: 1px;
+              height: 20px;
+              background-color: #ccc;
+              margin: 0 10px;
+            "
+          ></div>
+        </li>
+        <li>
+          <a href="#" style="border: 2px solid #ccc; padding: 7px 12px"
+            >Hablar con ventas</a
+          >
+        </li>
+        <li>
+          <div
+            style="
+              width: 1px;
+              height: 20px;
+              background-color: #ccc;
+              margin: 0 10px;
+            "
+          ></div>
+        </li>
+        <li>
+          <a
+            href="#"
+            style="background-color: #fff; color: #581859; padding: 12px 20px"
+            >Probar gratis</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="wrapper">
+      <div class="content">
+        <h1>Creada para las personas.</h1>
+        <p style="color: #f2ae30">Diseñada para la productividad.</p>
+        <p>
+          Conéctate con las personas que necesitas, encuentra lo que quieres y
+          automatiza el resto. Así es el trabajo en Slack, tu plataforma de
+          productividad.
+        </p>
+
+        <button class="register-email">
+          REGISTRARSE CON EL CORREO ELECTRÓNICO
+        </button>
+        <button routerLink="/login" class="register-google">
+          <img src="../../assets/icon/google.png" alt="Google Logo" />
+          REGISTRARSE CON GOOGLE
+        </button>
+      </div>
+      <div class="video-container">
+        <video
+          title="Equipo conversando sobre el trabajo en la aplicación de Slack"
+          role="img"
+          data-js-id="hero"
+          loop=""
+          muted=""
+          playsinline=""
+          poster="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/static/ia4-hero-product-ui.es-LA.jpg"
+        >
+          <source
+            src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/mp4/ia4-hero-product-ui.es-LA.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+  </section>
+</header>

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Color de fondo */
+}
+
+.logo-text {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 27px;
+  color: black; /* Cambio del color del texto a negro */
+  text-align: center; /* Centrar horizontalmente */
+
+}
+
+.logo-text img {
+  width: 40px;
+  height: 40px;
+  display: block; /* Asegurar que el logo esté centrado */
+  margin: 0 auto; /* Centrar horizontalmente el logo */
+}
+
+.container {
+  text-align: center;
+  background-color: #fff; /* Fondo del contenedor */
+  padding: 20px;
+
+}
+
+/* Estilos para el botón de Google */
+.google-button {
+  background-color: #fff; /* Fondo blanco */
+  border: 3px solid #ccc; /* Borde */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+  width: 400px; /* Ancho deseado */
+  height: 44px; /* Altura deseada */
+  text-align: center;
+}
+
+/* Estilos para el botón de Apple */
+.apple-button {
+  background-color: #fff; /* Fondo blanco */
+  border: 3px solid #ccc; /* Borde */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+  width: 400px; /* Ancho deseado */
+  height: 44px; /* Altura deseada */
+  text-align: center;
+
+}
+.google-button:hover {
+  background-color: #f0f0f0; /* Color al pasar el mouse */
+}
+
+.apple-button:hover {
+  background-color: #f0f0f0; /* Color al pasar el mouse */
+}
+
+.email-login-button:hover{
+  background-color: #581859de;
+}
+
+
+h1{
+  font-size: 50px;
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+h2{
+  font-size: 15px;
+  font-family: Slack-Lato,Slack-Fractions,appleLogo,sans-serif;
+  font-weight: normal;
+}
+
+ /* Estilos para el campo de entrada */
+ .email-input {
+  width: 400px; /* Mismo ancho que los otros botones */
+  height: 44px; /* Misma altura que los botones */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-sizing: border-box; /* Incluir el padding en el ancho */
+  font-size: 14px;
+}
+
+/* Estilo para el nuevo botón */
+.email-login-button {
+  background-color: #581859;
+  color: white;
+  width: 400px;
+  height: 44px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+/* ... Otros estilos ... */
+
+.custom-paragraph {
+  text-align: center; /* Centrar el texto */
+  max-width: 200px; /* Ancho mínimo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(165, 165, 165, 0.63);
+}
+
+/* ... Otros estilos ... */
+
+
+
+
+
+/*
+
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+*/
