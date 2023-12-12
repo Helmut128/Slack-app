@@ -121,9 +121,26 @@ h2{
   background-color: rgba(165, 165, 165, 0.63);
 }
 
-/* ... Otros estilos ... */
+
+.or-else-paragraph {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.line {
+  display: inline-block;
+  width: 9%;
+  border-top: 1px solid #000;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.paragraph-end{
+  background-color: rgba(189, 186, 186, 0.774);
+  display: inline;
 
 
+}
 
 
 

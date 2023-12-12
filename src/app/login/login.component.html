@@ -12,7 +12,7 @@
   </h2>
 
   <!-- Botón de Google -->
-  <button class="google-button">
+  <button routerLink="/chat" class="google-button">
     <img
       class="google-icon"
       src="/../../assets/icon/google.png"
@@ -32,7 +32,13 @@
   </button>
   <br />
 
-  <p>O BIEN</p>
+  <div class="container">
+    <!-- ... Otros elementos ... -->
+
+    <p class="or-else-paragraph">
+      <span class="line"></span> O BIEN <span class="line"></span>
+    </p>
+  </div>
 
   <input type="email" class="email-input" placeholder="nombre@work.email.com" />
   <br />
@@ -42,15 +48,10 @@
   </button>
   <br />
 
-  <p class="custom-paragraph">
+  <p class="paragraph-end">
     Te enviaremos un código mágico por correo electrónico para que inicies
     sesión sin contraseña. O,
-    <a
-      target="_self"
-      class="c-link bold"
-      href="/workspace-signin"
-      rel="noopener noreferrer"
-    >
+    <a target="_self" href="/workspace-signin" rel="noopener noreferrer">
       en lugar de eso, puedes iniciar sesión manualmente </a
     >.
   </p>

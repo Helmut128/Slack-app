@@ -1,0 +1,36 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1f2326ef;
+  width: 98%;
+  margin: 0 auto;
+
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Hace que el contenedor ocupe el 100% del ancho restante */
+}
+
+.question-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1264A3; /* Color del círculo */
+  border-radius: 50%; /* Hace que sea un círculo */
+  margin-right: 10px; /* Espacio entre el icono y el campo de búsqueda */
+}
+
+input[type="text"] {
+  flex: 1; /* Ocupa el 100% del ancho disponible en .search-bar */
+  padding: 8px;
+  margin-right: 5px;
+}
+
+/* Resto de estilos, como el botón y el contenedor de la foto de perfil, se mantienen igual */

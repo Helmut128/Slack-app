@@ -1,0 +1,83 @@
+
+.div1 { grid-area: 1 / 1 / 6 / 2; }
+.div2 { grid-area: 2 / 2 / 6 / 6; }
+.div3 { grid-area: 1 / 2 / 2 / 6; }
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  list-style: none;
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+  }
+
+/* MEDIO */
+.div2{
+  background-color: #1f2326ef;
+  text-align: left; /* Ajusta al centro si es necesario */
+  position: relative; /* Establece la posición relativa para los elementos internos */
+  height: 100%; /* Altura para el contenedor */
+  padding: 5%;
+
+}
+
+.div2 p {
+  position: absolute; /* Establece la posición absoluta para el texto */
+  bottom: 0; /* Lo coloca en la parte inferior */
+  width: 100%; /* Opcional: ancho completo */
+}
+
+
+.div3{
+  background-color: #1f2326ef;
+}
+
+.div4{
+  background-color: #1f2326ef;
+}
+
+  .sidebar {
+    background-color: #1F2326; /* Color oscuro de fondo */
+    color: white; /* Cambia el color del texto para que se vea bien en el fondo oscuro */
+    height: 100%; /* Ajusta la altura al 100% del contenedor padre (la cuadrícula) */
+    padding-top: 20px;
+
+  }
+
+  .sidebar .menu li {
+    /* Estilos para los elementos de la lista */
+    padding: 10px; /* Añade un espacio alrededor de cada elemento de la lista */
+  }
+
+  .sidebar .menu li a {
+    /* Estilos para los enlaces dentro de la lista */
+    text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+    color: white; /* Color del texto para los enlaces */
+    display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  }
+
+  .sidebar .menu li a:hover {
+    /* Estilos cuando se pasa el mouse sobre los enlaces */
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+  }
+
+  .sidebar .menu .divider {
+    border: 1px solid #555; /* Establece el estilo de la línea */
+    margin: 10px 0; /* Añade margen superior e inferior para separación */
+    width: 90%; /* Establece un ancho para la línea */
+  }
+
+
+/* Estilos CSS para el hover en el menú */
+.submenu:hover > a {
+  background-color: #1264A3;
+  color: white;
+}
+/* Estilos CSS para el hover en los elementos del submenú */
+.submenu-content li:hover > a {
+  background-color: #1264A3;
+  color: white;
+}

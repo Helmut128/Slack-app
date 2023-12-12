@@ -1,0 +1,79 @@
+<app-search></app-search>
+
+<div class="parent">
+  <div class="div1">
+    <div class="sidebar">
+      <ul class="menu" style="list-style: none; padding: 0">
+        <li>
+          <a href="#"
+            ><i class="fas fa-comments"></i> Hilos de tu conversación</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-note-sticky"></i>Camvas</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-folder-open"></i> Archivos</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-plus"></i> Más</a>
+        </li>
+      </ul>
+
+      <hr class="divider" />
+      <!-- Nuevo Menú -->
+      <ul class="menu" style="list-style: none; padding: 0">
+        <li
+          class="submenu"
+          (mouseenter)="showSubmenu = true"
+          (mouseleave)="showSubmenu = false"
+        >
+          <a href="#"><i class="fa-solid fa-layer-group"></i> Canales</a>
+          <ul class="submenu-content" *ngIf="showSubmenu">
+            <li>
+              <a href="#">Crear</a>
+              <ul class="sub-submenu-content">
+                <li><a href="#">Crear un canal</a></li>
+                <li><a href="#">Crear sección en una barra lateral</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Administrar</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"><i class="fa-solid fa-hashtag"></i> General</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-hashtag"></i> Varios</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-plus-square"></i> Agregar Canales</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-comment-alt-dots"></i> Mensajes Directos</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-user-plus"></i> Agregar Compañeros</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="div2">
+    <p style="color: white">
+      📣 Estás viendo el canal # general <br />
+      Este es el único canal que siempre incluirá a todos. Es un gran lugar para
+      publicar anuncios y tener conversaciones con todo el equipo.
+      <a href="" style="color: #068ef7e1"> Editar descripcion </a>
+    </p>
+  </div>
+
+  <div class="div3"></div>
+</div>
