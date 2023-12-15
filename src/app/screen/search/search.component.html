@@ -6,15 +6,35 @@
 
   <div class="question-icon">
     <!-- Icono de pregunta dentro de un círculo -->
-    <i class="fas fa-question"></i>
+    <button>
+      <i class="fas fa-question"></i>
+    </button>
   </div>
 
   <div class="profile">
-    <img
-      alt="photo-profile"
-      src="https://github.com/helmut128.png"
-      width="40px"
-    />
-    <!-- Aquí irá la foto de perfil -->
+    <button (click)="toggleMenu()">
+      <img
+        alt="photo-profile"
+        src="https://github.com/helmut128.png"
+        width="40px"
+      />
+    </button>
+
+    <!-- Menú emergente -->
+    <div class="popup-menu" *ngIf="showMenu" (clickOutside)="closeMenu()">
+      <!-- Contenido del menú -->
+      <ul style="color: white">
+        <img
+          alt="photo-profile"
+          src="https://github.com/helmut128.png"
+          width="40px"
+        />
+        <li><a href="#">Actualiza tu estado </a></li>
+        <li><a href="#">Pausar las notificaciones</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Preferencias</a></li>
+        <li><a href="#">Cerrar sesión de App-Chat</a></li>
+      </ul>
+    </div>
   </div>
 </nav>

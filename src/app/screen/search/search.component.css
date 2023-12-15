@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 
 .navbar {
   display: flex;
@@ -20,17 +25,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #1264A3; /* Color del círculo */
-  border-radius: 50%; /* Hace que sea un círculo */
+  width: 60px;
+  height: 60px;
+  border-radius: 10px; /* Hace que sea un círculo */
   margin-right: 10px; /* Espacio entre el icono y el campo de búsqueda */
 }
 
 input[type="text"] {
-  flex: 1; /* Ocupa el 100% del ancho disponible en .search-bar */
-  padding: 8px;
-  margin-right: 5px;
+  flex: 0.7; /* Ocupa el 100% del ancho disponible en .search-bar */
+  padding: 10px;
+  margin-left: 30%;
+  background-color: #1f2326ef ;
+
 }
 
-/* Resto de estilos, como el botón y el contenedor de la foto de perfil, se mantienen igual */
+
+

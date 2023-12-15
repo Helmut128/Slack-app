@@ -12,38 +12,61 @@
   grid-row-gap: 0px;
   list-style: none;
   font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+  border: 1px solid #6160605e; /* Grosor y color del borde */
+  border-radius: 2px; /* Radio de los bordes */
+
   }
 
 /* MEDIO */
-.div2{
+.div2 {
   background-color: #1f2326ef;
-  text-align: left; /* Ajusta al centro si es necesario */
-  position: relative; /* Establece la posición relativa para los elementos internos */
-  height: 100%; /* Altura para el contenedor */
+  text-align: left;
+  height: 100%;
   padding: 5%;
+  border: 2px solid #6160605e;
+  border-radius: 5px;
+  font-size: small;
+  display: flex; /* Utilizamos flexbox para alinear el contenido hacia abajo */
+  flex-direction: column; /* Alineamos el contenido en columna */
+  justify-content: flex-end; /* Alineamos el contenido hacia abajo */
+  padding-top: 75px;
 
 }
 
-.div2 p {
-  position: absolute; /* Establece la posición absoluta para el texto */
-  bottom: 0; /* Lo coloca en la parte inferior */
-  width: 100%; /* Opcional: ancho completo */
+.div2 h1 {
+  color: white;
+  font-size: 24px; /* Tamaño de fuente mayor para el primer h1 */
+  margin-bottom: 5px; /* Espacio entre el primer h1 y el segundo h2 */
+
 }
+
+.div2 h2 {
+  color: white;
+  font-size: 18px; /* Tamaño de fuente menor para el segundo h2 */
+  margin-right: 100px;
+}
+
 
 
 .div3{
   background-color: #1f2326ef;
+  border: 2px solid #6160605e; /* Grosor y color del borde */
+  border-radius: 5px; /* Radio de los bordes */
 }
 
 .div4{
   background-color: #1f2326ef;
+
 }
 
   .sidebar {
     background-color: #1F2326; /* Color oscuro de fondo */
     color: white; /* Cambia el color del texto para que se vea bien en el fondo oscuro */
-    height: 100%; /* Ajusta la altura al 100% del contenedor padre (la cuadrícula) */
+    width: 100%;
+    height: 120%; /* Ajusta la altura al 100% del contenedor padre (la cuadrícula) */
     padding-top: 20px;
+    border: 2px solid #6160605e; /* Grosor y color del borde */
+    border-radius: 5px; /* Radio de los bordes */
 
   }
 
@@ -61,7 +84,7 @@
 
   .sidebar .menu li a:hover {
     /* Estilos cuando se pasa el mouse sobre los enlaces */
-    background-color: #555; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+    background-color: #1264A3; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
   }
 
   .sidebar .menu .divider {
@@ -81,3 +104,54 @@
   background-color: #1264A3;
   color: white;
 }
+
+
+.general{
+  background-color: transparent;
+  border: none ;
+  color: white;
+  font-size: large;
+  font-family: inherit;
+  padding-top: 10px;
+
+
+}
+.general:hover{
+  background-color: #555;
+
+}
+
+.general2{
+  color: white;
+}
+.general2:hover{
+  background-color: #555;
+  width: 10%;
+
+}
+
+
+/*BOTÓN ABAJO*/
+
+.bottom-box {
+  width: 330px;
+  position: fixed;
+  bottom: 30px; /* Distancia desde la parte inferior */
+  left: 20px; /* Distancia desde la derecha */
+  border: 1px solid #ccc; /* Borde opcional */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+
+}
+
+.button-down button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-down button i {
+  margin-left: 40px; /* Espacio entre los iconos */
+}
+

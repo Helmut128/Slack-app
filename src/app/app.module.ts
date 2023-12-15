@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ChatComponent } from './screen/chat/chat.component';
 import { SearchComponent } from './screen/search/search.component';
+import { PruebaComponent } from './prueba/prueba.component';
+import { EditorComponent } from './screen/editor/editor.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,12 @@ import { SearchComponent } from './screen/search/search.component';
     HeaderComponent,
     LoginComponent,
     ChatComponent,
-    SearchComponent
+    SearchComponent,
+    PruebaComponent,
+    EditorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

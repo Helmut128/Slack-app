@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0; /* Color de fondo */
-}
 
 .logo-text {
   display: inline-block;
@@ -20,8 +11,6 @@ body {
 .logo-text img {
   width: 40px;
   height: 40px;
-  display: block; /* Asegurar que el logo esté centrado */
-  margin: 0 auto; /* Centrar horizontalmente el logo */
 }
 
 .container {
@@ -41,7 +30,7 @@ body {
   display: inline-block;
   cursor: pointer;
   width: 400px; /* Ancho deseado */
-  height: 44px; /* Altura deseada */
+  height: 55px; /* Altura deseada */
   text-align: center;
 }
 
@@ -55,7 +44,7 @@ body {
   display: inline-block;
   cursor: pointer;
   width: 400px; /* Ancho deseado */
-  height: 44px; /* Altura deseada */
+  height: 55px; /* Altura deseada */
   text-align: center;
 
 }
@@ -109,9 +98,6 @@ h2{
   cursor: pointer;
 }
 
-
-/* ... Otros estilos ... */
-
 .custom-paragraph {
   text-align: center; /* Centrar el texto */
   max-width: 200px; /* Ancho mínimo */
@@ -120,7 +106,6 @@ h2{
   align-items: center;
   background-color: rgba(165, 165, 165, 0.63);
 }
-
 
 .or-else-paragraph {
   padding-top: 10px;
@@ -137,8 +122,8 @@ h2{
 
 .paragraph-end{
   background-color: rgba(189, 186, 186, 0.774);
-  display: inline;
-
+  width: 400px;
+  display: inline-block;
 
 }
 

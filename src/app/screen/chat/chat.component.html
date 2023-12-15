@@ -10,8 +10,12 @@
           >
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-note-sticky"></i>Camvas</a>
+          <a href="#"><i class="fa-solid fa-note-sticky"></i> Camvas</a>
         </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-building"></i> Slack Connect </a>
+        </li>
+
         <li>
           <a href="#"><i class="fa-solid fa-folder-open"></i> Archivos</a>
         </li>
@@ -28,7 +32,7 @@
           (mouseenter)="showSubmenu = true"
           (mouseleave)="showSubmenu = false"
         >
-          <a href="#"><i class="fa-solid fa-layer-group"></i> Canales</a>
+          <a href="#"><i class="fa-solid fa-caret-down"></i> Canales</a>
           <ul class="submenu-content" *ngIf="showSubmenu">
             <li>
               <a href="#">Crear</a>
@@ -54,26 +58,40 @@
         </li>
         <li>
           <a href="#"
-            ><i class="fa-solid fa-comment-alt-dots"></i> Mensajes Directos</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-user-plus"></i> Agregar Compañeros</a
+            ><i class="fa-solid fa-caret-right"></i> Mensajes Directos</a
           >
         </li>
       </ul>
+      <div class="bottom-box">
+        <div class="button-down">
+          <button style="color: white">
+            general <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-headphones"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="div2">
-    <p style="color: white">
-      📣 Estás viendo el canal # general <br />
+    <h1 style="color: white">📣 Estás viendo el canal # general</h1>
+
+    <h2 style="color: white">
       Este es el único canal que siempre incluirá a todos. Es un gran lugar para
       publicar anuncios y tener conversaciones con todo el equipo.
       <a href="" style="color: #068ef7e1"> Editar descripcion </a>
-    </p>
+    </h2>
+    <app-prueba></app-prueba>
   </div>
 
-  <div class="div3"></div>
+  <div class="div3">
+    <div>
+      <button class="general">#general</button>
+
+      <p class="general2" style="font-size: small">
+        <i class="fa-solid fa-plus"></i>
+        Agregar un marcador
+      </p>
+    </div>
+  </div>
 </div>
